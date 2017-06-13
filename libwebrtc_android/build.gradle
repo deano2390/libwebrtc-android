@@ -4,6 +4,11 @@ android {
     compileSdkVersion 25
     buildToolsVersion "25.0.3"
 
+    sourceSets.main {
+        jniLibs.srcDir 'libs'
+        jni.srcDirs = [] //disable automatic ndk-build call
+    }
+    
     defaultConfig {
         minSdkVersion 14
         targetSdkVersion 25
@@ -28,4 +33,10 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:25.3.1'
     testCompile 'junit:junit:4.12'
+
+    compile files('libs/autobanh.jar')
+    compile files('libs/base_java.jar')
+    compile files('libs/libjingle_peerconnection.jar')
+    compile files('libs/audio_device_java.jar')
+
 }
