@@ -2,9 +2,7 @@
 
     package="uk.co.deanwild.libwebrtc_android">
 
-    <application
-        android:allowBackup="true"
-        android:supportsRtl="true">
+    <application>
 
     </application>
 
