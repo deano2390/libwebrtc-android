@@ -2,7 +2,9 @@
 
 Prebuilt WebRTC library for Android, available via gradle.
 
-Built against the 'stable' release branches used in Chrome for Android.
+Built against the 'stable' release branches used in Chrome for Android (currently M59).
+
+I will endevour to add the latest stable releases as and when they are released. (Release Schedule: https://www.chromium.org/developers/calendar)
 
 Usage is demonstrated in the AppRTC sample app which I have mirrored and setup to use this library:
 https://github.com/deano2390/AppRTC
