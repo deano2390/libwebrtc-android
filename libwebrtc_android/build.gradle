@@ -18,13 +18,12 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile files('libs/autobanh.jar')
-    compile files('libs/base_java.jar')
-    compile files('libs/libjingle_peerconnection.jar')
-    compile files('libs/audio_device_java.jar')
-
+    compile fileTree(include: ['*.jar','*.aar'], dir: 'libs')
 }
